@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VDMA</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<script type="text/javascript" src="js/jquery-1.10.2-min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap1.css">
+	<link rel="stylesheet" href="css/vdma.css">
+	<!--<link type="text/css" rel="stylesheet/less" href="less/bootstrap.less">-->
+	<script type="text/javascript" src="js/less-1.5.0.min.js"></script>
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<![endif]-->
+    <!--[if gte IE 9]>
+    <style type="text/css">
+        .item-text-title {
+            filter: none;
+        }
+    </style>
+    <![endif]-->
+</head>
+<body>
+
+<div class="container-fluid main vdma-container">
+<!-- header -->
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="container">
+			<a data-target=".navbar-responsive-collapse" data-toggle="collapse" class="btn btn-navbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+			<a href="#" class="brand visible-desktop"><img src="images/logo_header.png" class="logo" /></a>
+			<a href="#" class="brand hidden-desktop brand_img"><img src="images/logo_xs.png" /></a>
+			<div class="nav-collapse collapse navbar-responsive-collapse">
+				<ul class="nav hidden-desktop burger_menu">
+					<li class="dropdown">
+						<a data-toggle="dropdown" class="dropdown-toggle burger_menu_link" href="javascript:void(0);">Messethemen <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li class="dropdown-submenu-element"><a href="messethemen.html" class="burger_menu_link">Integrated Industry</a></li>
+							<li class="dropdown-submenu-element"><a href="messethemen.html" class="burger_menu_link">Messe News</a></li>
+							<li class="dropdown-submenu-element"><a href="messethemen.html" class="burger_menu_link">Veranstaltungen</a></li>
+							<li class="dropdown-submenu-element"><a href="messethemen.html" class="burger_menu_link">Pressemeldungen</a></li>
+							<li class="dropdown-submenu-element"><a href="messethemen.html" class="burger_menu_link">Juliane berichtet Live (Blog)</a></li>
+						</ul>
+					</li>
+					<li class="active"><a href="verband.html" class="burger_menu_link">Verband</a></li>
+					<li><a href="services.html" class="burger_menu_link">Services</a></li>
+					<li>
+						<div class="login_block">
+							<p>MyVDMA</p>
+							<p>
+								Unser Mitgliedernetzwerk, bleiben Sie informiert, reden Sie mit, stimmen Sie ab.
+							</p>
+							<a href="" class="btn btn-large btn_orange">Login MyVDMA&nbsp;&nbsp;<i class="fa fa-caret-right"></i></a>
+							<p class="text-center link_keine">Keine Anmeldedaten?</p>
+						</div>
+					</li>
+				</ul>
+				<ul class="nav pull-right contact visible-desktop">
+					<li><a href="#">Kontakt</a></li>
+				</ul>
+			</div><!-- /.nav-collapse -->
+		</div>
+	</div>
+</div>
+<div class="bg_main">
+<!-- promo block -->
+<div class="container visible-desktop promo_block_wrapper">
+	<div class="row-fluid promo_block">
+		<div class="logo_menu">
+			<div class="span6" data-xs="span6" data-phone="span6" data-tab="span6" data-desktop="span6">
+				<img src="images/logo_transparent.png" />
+			</div>
+			<div class="span6 text-right href_wrapper" data-xs="span6" data-phone="span6" data-tab="span6" data-desktop="span6">
+				<ul id="top_menu_wrapper">
+					<li id="top_menu_open">
+						<a href="" class="menu messethemen">Messethemen</a>
+						<div class="popover bottom">
+							<div class="arrow"></div>
+							<div class="popover-content">
+								<div class="row-fluid">
+									<div class="span6" data-xs="span6" data-phone="span6" data-tab="span6" data-desktop="span6">
+										<div class="row-fluid">
+											<div class="span4" data-xs="span4" data-phone="span4" data-tab="span4" data-desktop="span4">
+												<img src="images/popover_img1.jpg" />
+											</div>
+											<div class="span8" data-xs="span8" data-phone="span8" data-tab="span8" data-desktop="span8">
+												<h3 class="margin-top-0"><a href="">Integrated Industry</a></h3>
+												<p>
+													Das Leitthema der Hannover Messe 2015. Überblick und Einführung in die Zukunft des Maschinenbaus.
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="span6" data-xs="span6" data-phone="span6" data-tab="span6" data-desktop="span6">
+										<div class="row-fluid">
+											<div class="span4" data-xs="span4" data-phone="span4" data-tab="span4" data-desktop="span4">
+												<p><a href="">Messe News</a></p>
+												<p><a href="">Veranstaltungen</a></p>
+												<p><a href="">Pressemeldungen</a></p>
+											</div>
+											<div class="span8" data-xs="span8" data-phone="span8" data-tab="span8" data-desktop="span8">
+												<div class="row">
+													<div class="span4 text-right" data-xs="span4" data-phone="span4" data-tab="span4" data-desktop="span4">
+														<img src="images/popover_img2.jpg" />
+													</div>
+													<div class="span8" data-xs="span8" data-phone="span8" data-tab="span8" data-desktop="span8">
+														<h3 class="margin-top-0"><a href="">Juliane berichtet Live</a></h3>
+														<p>
+															Was ist neu, was fasziniert uns?Unser Live-Blog zur Messe.
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="popover-footer">
+								<p>Direkt finden:&nbsp;&nbsp;&nbsp;<a href=""><i class="fa fa-caret-right"></i> Hier ist der VDMA auf der Messe</a>&nbsp;&nbsp;&nbsp;<a href=""><i class="fa fa-caret-right"></i> Ansprechpartner vor Ort</a></p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="" class="active menu" data-menu="verband">Verband</a>
+					</li>
+					<li>
+						<a href="" class="menu" data-menu="services">Services</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- News tabs -->
+<div class="container">
+<div class="news-main-modikommt">
+<!--breadcrumb-->
+<div class="row-fluid">
+	<div class="span12" data-xs="span12" data-phone="span12" data-tab="span12" data-desktop="span12">
+		<ul class="breadcrumb desktops">
+			<li class="home"><a href="#"><i class="fa fa-home"></i></a> <span class="divider">/</span></li>
+			<li class="active">Verband</li>
+		</ul>
+		<ul class="breadcrumb phone">
+			<li class="home"><div class="arrow"><a href="">Hannover Messe</a></div> <span class="divider">...</span></li>
+			<li><a href="#"><div class="arrow"><a href="">Verband</a></div></a></li>
+		</ul>
+	</div>
+</div><!--breadcrumb-->
+
+<div class="news-main-modikommt-wrapper">
+	<div class="row-fluid news-main-modikommt-title margin-bottom-0">
+		<div class="span12 text-center" data-xs="span12" data-phone="span12" data-tab="span12" data-desktop="span12">
+			<h1>Über 1.000.000 Beschäftigte in Deutschland</h1>
+			<p>
+                Der Maschinenbau und seine Ideen sind maßgeblich lorem ipsum
+			</p>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div data-desktop="span8" data-tab="span8" data-phone="span12" data-xs="span12" class="span8">
+				<h2 class="margin-top-0">Lorem ipsum dolor sit amet, consectetuer adipiscing
+				elit. Aenean commodo ligula eget dolor.</h2>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+				ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
+				magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+				ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
+				quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+				arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+				Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+				Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
+		</div>
+		<div data-desktop="span4" data-tab="span4" data-phone="span10" data-xs="span10" class="span4">
+			<strong id="selbstverständnis">Wesentliche Inhalte:</strong>
+			<p>
+				<a href="#selbstverständnis"><i class="fa fa-long-arrow-down"></i> Unser Selbstverständnis</a><br>
+				<a href="#kernthemen"><i class="fa fa-long-arrow-down"></i> Arbeit und Kernthemen</a><br>
+				<a href="#initiativen"><i class="fa fa-long-arrow-down"></i> Initiativen</a><br>
+				<a href="#struktur"><i class="fa fa-long-arrow-down"></i> Struktur und Organisation</a><br>
+			</p>
+		</div>
+	</div>
+	<div class="row-fluid text-center">
+		<div class="span12" data-xs="span12" data-phone="span12" data-tab="span12" data-desktop="span12">
+			<h2 class="margin-top-20" id="kernthemen">Unser Wissen und Arbeiten ist fokussiert auf Kernthemen</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetuer &nbsp;&nbsp;<a href=""><i class="fa fa-caret-right"></i> Fachgruppen</a>&nbsp;&nbsp;und&nbsp;&nbsp;<a href=""><i class="fa fa-caret-right"></i> Ansprechpartner</a>. Aenean commodo ligula eget dolor.
+				Aenean massa. Cum sociis natoqu
+			</p>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="span4" data-xs="span12" data-phone="span12" data-tab="span4" data-desktop="span4">
+			<a href=""><i class="fa fa-caret-right"></i> Kernthema</a><br/>
+			<p>
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+			</p>
+		</div>
+		<div class="span4" data-xs="span12" data-phone="span12" data-tab="span4" data-desktop="span4">
+			<a href=""><i class="fa fa-caret-right"></i> Kernthema</a><br/>
+			<p>
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+			</p>
+		</div>
+		<div class="span4" data-xs="span12" data-phone="span12" data-tab="span4" data-desktop="span4">
+			<a href=""><i class="fa fa-caret-right"></i> Kernthema</a><br/>
+			<p>
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+			</p>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="span4" data-xs="span12" data-phone="span12" data-tab="span4" data-desktop="span4">
+			<a href=""><i class="fa fa-caret-right"></i> Kernthema</a><br/>
+			<p>
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+			</p>
+		</div>
+		<div class="span4" data-xs="span12" data-phone="span12" data-tab="span4" data-desktop="span4">
+			<a href=""><i class="fa fa-caret-right"></i> Kernthema</a><br/>
+			<p>
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+			</p>
+		</div>
+		<div class="span4" data-xs="span12" data-phone="span12" data-tab="span4" data-desktop="span4">
+			<a href=""><i class="fa fa-caret-right"></i> Kernthema</a><br/>
+			<p>
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+			</p>
+		</div>
+	</div>
+
+    <!-- gallery -->
+    <div class="row-fluid">
+        <div class="span12" data-xs="span12" data-phone="span12" data-tab="span12" data-desktop="span12">
+            <h2 class="margin-top-20" id="initiativen">Initiativen</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
+            </p>
+        </div>
+    </div>
+
+    <div class="row-fluid gallery">
+        <div class="span12" data-xs="span12" data-phone="span12" data-tab="span12" data-desktop="span12">
+            <div class="span4" data-xs="span12" data-phone="span12" data-tab="span4" data-desktop="span4">
+                <div class="gallery-item">
+                    <a class="item-block" href="">
+                    <span class="item-text">
+                        <img src="images/gallery1.png" class="full_width"/>
+                        <span class="item-text-title">
+                            <span>Initiave</span>
+                        </span>
+                        <span class="item-text-description">
+                            <hr>
+                            Indien ist Partnerland der
+                            HANNOVER MESSE 2015. Der
+                            indische Ministerpräsi
+                        </span>
+                    </span>
+                    </a>
+                </div>
+            </div>
+            <div class="span8" data-xs="span12" data-phone="span12" data-tab="span8" data-desktop="span8">
+                <div class="gallery-item">
+                    <a class="item-block" href="">
+                    <span class="item-text">
+                        <img src="images/gallery_lg.png" class="full_width gallery_img_lg"/>
+                        <img src="images/gallery_sm.png" class="full_width gallery_img_sm"/>
+                        <span class="item-text-title">
+                            <span>Initiave</span>
+                        </span>
+                        <span class="item-text-description">
+                            <hr>
+                            Indien ist Partnerland der
+                            HANNOVER MESSE 2015. Der
+                            indische Ministerpräsi
+                        </span>
+                    </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="span12 margin-top-20" data-xs="span12" data-phone="span12" data-tab="span12" data-desktop="span12">
+            <div class="span4" data-xs="span12" data-phone="span12" data-tab="span4" data-desktop="span4">
+                <div class="gallery-item">
+                    <a class="item-block" href="">
+                    <span class="item-text">
+                        <img src="images/gallery1.png" class="full_width"/>
+                        <span class="item-text-title">
+                            <span>Initiave</span>
+                        </span>
+                        <span class="item-text-description">
+                            <hr>
+                            Indien ist Partnerland der
+                            HANNOVER MESSE 2015. Der
+                            indische Ministerpräsi
+                        </span>
+                    </span>
+                    </a>
+                </div>
+            </div>
+            <div class="span4" data-xs="span12" data-phone="span12" data-tab="span4" data-desktop="span4">
+                <div class="gallery-item">
+                    <a class="item-block" href="">
+                    <span class="item-text">
+                        <img src="images/gallery1.png" class="full_width"/>
+                        <span class="item-text-title">
+                            <span>Initiave</span>
+                        </span>
+                        <span class="item-text-description">
+                            <hr>
+                            Indien ist Partnerland der
+                            HANNOVER MESSE 2015. Der
+                            indische Ministerpräsi
+                        </span>
+                    </span>
+                    </a>
+                </div>
+            </div>
+            <div class="span4" data-xs="span12" data-phone="span12" data-tab="span4" data-desktop="span4">
+                <div class="gallery-item">
+                    <a class="item-block" href="">
+                    <span class="item-text">
+                        <img src="images/gallery1.png" class="full_width"/>
+                        <span class="item-text-title">
+                            <span>Initiave</span>
+                        </span>
+                        <span class="item-text-description">
+                            <hr>
+                            Indien ist Partnerland der
+                            HANNOVER MESSE 2015. Der
+                            indische Ministerpräsi
+                        </span>
+                    </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+			$(document).ready( function() {
+				var $galleryObj = $('.gallery');
+				if ( $galleryObj.length > 0 ) {
+					resizeGalleryItems($galleryObj);//common.js
+				}
+				$(window).resize(function() {
+					if ( $galleryObj.length > 0 ) {
+						resizeGalleryItems($galleryObj);//common.js
+					}
+				});
+			});
+        </script>
+    </div>
+
+
+	<div class="news-main-modikommt-content">
+		<div class="row-fluid">
+			<div class="span12" data-xs="span12" data-phone="span12" data-tab="span12" data-desktop="span12">
+				<h2 id="struktur">Struktur und Organisation</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
+				</p>
+			</div>
+			<div class="span12" data-xs="span12" data-phone="span12" data-tab="span12" data-desktop="span12">
+				<div id="accordion" class="accordion">
+					<!-- accordion 1 -->
+					<div class="accordion-group">
+						<div class="accordion-heading accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+							<a href="javascript:void(0);">Struktur 1</a>
+						</div><!--.panel-heading-->
+						<div id="collapseOne" class="accordion-body collapse in">
+							<div class="accordion-inner">
+                                <strong>sto, fringilla vel, aliquet nec, vulputatations</strong>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                                ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis <a href="">Alle Landesverbände öffnen</a></p>
+							</div>
+						</div><!--.accordion-body-->
+					</div><!--.accordion-group-->
+
+					<!-- accordion 2 -->
+					<div class="accordion-group">
+						<div class="accordion-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+							<a href="javascript:void(0);">Landesverbände</a>
+						</div><!--.panel-heading-->
+						<div id="collapseTwo" class="accordion-body collapse">
+							<div class="accordion-inner">
+                                <strong>sto, fringilla vel, aliquet nec, vulputatations</strong>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                                    ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis <a href="">Alle Landesverbände öffnen</a></p>
+                            </div>
+						</div><!--.accordion-body-->
+					</div><!--.accordion-group-->
+
+					<!-- accordion 3 -->
+					<div class="accordion-group">
+						<div class="accordion-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+							<a href="javascript:void(0);">Struktur 3</a>
+						</div><!--.panel-heading-->
+						<div id="collapseThree" class="accordion-body collapse">
+							<div class="accordion-inner">
+                                <strong>sto, fringilla vel, aliquet nec, vulputatations</strong>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                                    ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis <a href="">Alle Landesverbände öffnen</a></p>
+                            </div>
+						</div><!--.accordion-body-->
+					</div><!--.accordion-group-->
+
+					<!-- accordion 4 -->
+					<div class="accordion-group">
+						<div class="accordion-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+							<a href="javascript:void(0);">Struktur 4</a>
+						</div><!--.panel-heading-->
+						<div id="collapseFour" class="accordion-body collapse">
+							<div class="accordion-inner">
+                                <strong>sto, fringilla vel, aliquet nec, vulputatations</strong>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                                    ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis <a href="">Alle Landesverbände öffnen</a></p>
+                            </div>
+						</div><!--.accordion-body-->
+					</div><!--.accordion-group-->
+
+					<!-- accordion 5 -->
+					<div class="accordion-group">
+						<div class="accordion-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+							<a href="javascript:void(0);">Struktur 5</a>
+						</div><!--.panel-heading-->
+						<div id="collapseFive" class="accordion-body collapse">
+							<div class="accordion-inner">
+                                <strong>sto, fringilla vel, aliquet nec, vulputatations</strong>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                                    ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis <a href="">Alle Landesverbände öffnen</a></p>
+                            </div>
+						</div><!--.accordion-body-->
+					</div><!--.accordion-group-->
+				</div>
+				<script type="text/javascript">
+					$(document).ready( function() {
+						$('#accordion').find('div[data-toggle=collapse]').on('click', function() {
+							var headingObj = $(this);
+
+							if ( headingObj.hasClass('collapsed') ) {
+								$('#accordion').find('div[data-toggle=collapse]').addClass('collapsed');
+								headingObj.removeClass('collapsed');
+							} else {
+								$('#accordion').find('div[data-toggle=collapse]').addClass('collapsed');
+							}
+						});
+					});
+				</script>
+			</div>
+			<div class="span12 text-center" data-xs="span12" data-phone="span12" data-tab="span12" data-desktop="span12">
+				<a class="btn btn_blue" href="">Struktur im Überblick&nbsp;&nbsp;<i class="fa fa-caret-right"></i></a>
+			</div>
+		</div>
+	</div>
+</div>
+</div><!--.news-main-modikommt-->
+</div><!--.container-->
+<!-- News tabs -->
+
+<!-- Main news -->
+<div class="container">
+	<div class="main-news">
+		<div class="row-fluid">
+			<div class="span4 main-news-content" data-xs="span12" data-phone="span4" data-tab="span4" data-desktop="span4">
+				<div class="row-fluid main-news-element">
+					<div class="span2 img_holder" data-xs="span12" data-phone="span12" data-tab="span12" data-desktop="span2">
+						<img class="for_desktop" src="images/list_element3.png" />
+						<img class="for_tabs" src="images/list_element3_sm.png" />
+					</div>
+					<div class="span10 main-news-desc" data-xs="span12" data-phone="span12" data-tab="span12" data-desktop="span10">
+						<a href="#"><strong>Unsere Beratungen</strong></a>
+						<p class="m-b-0">Die Meinungen der Branche</p>
+					</div>
+				</div>
+			</div><!--.span4-->
+			<div class="span4 main-news-content" data-xs="span12" data-phone="span4" data-tab="span4" data-desktop="span4">
+				<div class="row-fluid main-news-element">
+					<div class="span2 img_holder" data-xs="span12" data-phone="span12" data-tab="span12" data-desktop="span2">
+						<img class="for_desktop" src="images/list_element2.png" />
+						<img class="for_tabs" src="images/list_element2_sm.png" />
+					</div>
+					<div class="span10 main-news-desc" data-xs="span12" data-phone="span12" data-tab="span12" data-desktop="span10">
+						<a href="#" class=""><strong>Der Verband VDMA</strong></a>
+						<p class="m-b-0">Daten, Fakten, Aufgaben</p>
+					</div>
+				</div>
+			</div><!--.span4-->
+			<div class="span4 main-news-content" data-xs="span12" data-phone="span4" data-tab="span4" data-desktop="span4">
+				<div class="row-fluid main-news-element">
+					<div class="span2 img_holder" data-xs="span12" data-phone="span12" data-tab="span12" data-desktop="span2">
+						<img class="for_desktop" src="images/list_element1.png" />
+						<img class="for_tabs" src="images/list_element1_sm.png" />
+					</div>
+					<div class="span10 main-news-desc" data-xs="span12" data-phone="span12" data-tab="span12" data-desktop="span10">
+						<a href="#"><strong>Vorteile für Mitglieder</strong></a>
+						<p class="m-b-0">Unsere Beratungen&nbsp;& Leistungen</p>
+					</div>
+				</div>
+			</div><!--.span4-->
+		</div><!--.row-fluid-->
+	</div><!--.main-news-->
+</div><!--.container-->
+
+<div class="container-fluid">
+	<div class="container">
+		<!-- contact information -->
+		<div class="container block_contact_info_wrapper">
+			<div class="row-fluid block_contact_info">
+				<div class="span6 contact_info_element" data-xs="span12" data-phone="span12" data-tab="span6" data-desktop="span6">
+					<div class="contact_info_element_content">
+						<h3>Wenn Sie Fragen haben</h3>
+						<div class="row-fluid">
+							<div class="span3 text-center hidden-tablet" data-xs="span3" data-phone="span3" data-tab="span3" data-desktop="span3">
+								<img src="images/info1.png" />
+							</div>
+							<div class="span9" data-xs="span9" data-phone="span9" data-tab="span9" data-desktop="span9">
+								<p>
+									<strong>Dr. Alexander Koldau</strong><br>
+									Messen und Symposien,<br/>
+									Außenwirtschaft - Naher und<br/>
+									Mittlerer Osten
+								</p>
+								<p>(+49 69) 66 03-14 34</p>
+							</div>
+						</div>
+					</div>
+					<div class="row-fluid info_element_footer">
+						<div class="span12 text-center" data-xs="span12" data-phone="span12" data-tab="span12" data-desktop="span12">
+							<a href="" class="btn btn_gray">Email schreiben&nbsp;&nbsp;<i class="fa fa-caret-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="span6 contact_info_element" data-xs="span12" data-phone="span12" data-tab="span6" data-desktop="span6">
+					<div class="contact_info_element_content">
+						<h3>Für Ihren Messebesuch</h3>
+						<div class="row-fluid">
+							<div class="span3 text-center hidden-tablet" data-xs="span3" data-phone="span3" data-tab="span3" data-desktop="span3">
+								<img src="images/info2.png"/>
+							</div>
+							<div class="span9" data-xs="span9" data-phone="span9" data-tab="span9" data-desktop="span9">
+								<a href=""><i class="fa fa-caret-right"></i> Anreise zum Messegelände</a><br/>
+								<a href=""><i class="fa fa-caret-right"></i> Hallen- und Standplan&nbsp;(.pdf)</a><br/>
+								<a href=""><i class="fa fa-caret-right"></i> Veranstaltungsverzeichnis&nbsp;(.pdf)</a><br/>
+								<a href=""><i class="fa fa-caret-right"></i> www.hannover-messe.de</a><br/>
+							</div>
+						</div>
+					</div>
+
+					<div class="row-fluid info_element_footer">
+						<div class="span12 text-center btn_holder" data-xs="span12" data-phone="span12" data-tab="span12" data-desktop="span12">
+							<a href="" class="btn btn_gray">VDMA Services vor Ort&nbsp;&nbsp;<i class="fa fa-caret-right"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div><!--.container-->
+
+<!-- footer -->
+<div class="container-fluid block_footer">
+	<div class="container block_footer_container">
+		<div class="row-fluid footer_info">
+			<div class="span12" data-xs="span12" data-phone="span12" data-tab="span12" data-desktop="span12">
+				<div class="row-fluid">
+					<div class="span3" data-xs="span12" data-phone="span12" data-tab="span6" data-desktop="span3">
+						<div class="row-fluid">
+							<div class="span12" data-xs="span6" data-phone="span6" data-tab="span12" data-desktop="span12">
+								<p><img src="images/logo_white.png" /></p>
+							</div>
+							<div class="span12" data-xs="span6" data-phone="span6" data-tab="span12" data-desktop="span12">
+								<p class="footer_title">
+									<strong>VDMA</strong> Verband Deutscher<br/>
+									Maschinen- und Anlagenbau e.V.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="span3 map text-right" data-xs="span6" data-phone="span6" data-tab="span3" data-desktop="span3">
+						<p><img src="images/map.png" /></p>
+					</div>
+					<div class="span3" data-xs="span5" data-phone="span5" data-tab="span3" data-desktop="span3">
+						<p>
+							<strong>
+								<nobr>Lyoner Strasse 18</nobr><br/>
+								60528 Frankfurt/Main
+							</strong>
+						</p>
+						<p>
+							Postfach <nobr>71 08 64</nobr><br/>
+						60498 Frankfurt/Main
+						</p>
+						<p>
+							Telefon <nobr><a href="javascript:void(0);" class="text_footer">+49 69 6603 0</a></nobr><br/>
+						Fax <nobr><a href="javascript:void(0);" class="text_footer">+49 69 6603-1511</a></nobr><br/>
+						info@vdma.org
+						</p>
+					</div>
+					<div class="span3 social" data-xs="span12" data-phone="span12" data-tab="span12" data-desktop="span3">
+						<p><strong>VDMA Profile im Netz</strong></p>
+						<div class="row-fluid">
+							<div class="span12 facebook" data-xs="span5" data-phone="span3" data-tab="span2" data-desktop="span12">
+								<a href="" class="text_footer"><i class="fa fa-facebook"></i>&nbsp;Facebook</a>
+							</div>
+							<div class="span12" data-xs="span5" data-phone="span3" data-tab="span2" data-desktop="span12">
+								<a href="" class="text_footer"><i class="fa fa-twitter"></i>&nbsp;Twitter</a>
+							</div>
+							<div class="span12 google" data-xs="span5" data-phone="span3" data-tab="span2" data-desktop="span12">
+								<a href="" class="text_footer"><i class="fa fa-google-plus"></i>&nbsp;Google&nbsp;+</a>
+							</div>
+							<div class="span12 youtube" data-xs="span5" data-phone="span3" data-tab="span2" data-desktop="span12">
+								<a href="" class="text_footer"><i class="fa fa-youtube"></i>&nbsp;Youtube</a>
+							</div>
+							<div class="span12 xing" data-xs="span5" data-phone="span3" data-tab="span2" data-desktop="span12">
+								<a href="" class="text_footer"><i class="fa fa-xing"></i>&nbsp;Xing</a>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container block_footer_container">
+		<div class="row-fluid bottom_footer ">
+			<div class="span6" data-xs="span6" data-phone="span6" data-tab="span6" data-desktop="span6">
+				<span class="vdma2015">&copy; VDMA 2015</span>
+			</div>
+			<div class="span6 text-right" data-xs="span6" data-phone="span6" data-tab="span6" data-desktop="span6">
+				<div class="">
+					<span>Rechtshinweise</span>
+					<span class="impressum">Impressum</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+</body>
+</html>
